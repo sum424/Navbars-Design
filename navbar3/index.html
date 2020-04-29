@@ -3,9 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navbar Designs</title>
+    <title>Navbar Sticky Layout</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script
+        src="https://code.jquery.com/jquery-3.5.0.js"
+        integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+        crossorigin="anonymous">
+    </script>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="all.min.css">
+    <link rel="stylesheet" href="fontawesome.min.css">
+    <link rel="stylesheet" href="css/all.css">
+
+    </title>
 </head>
 <body>
+    <div class="wrapper">
+        <header>
+            <nav>
+                <div class="menu-icon">
+                    <i class="fa fa-bars fa-2x"></i>
+                </div>
+                <div class="logo">
+                    LOGO
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">BLOG</a> </li>
+                        <li><a href="#">CONTACT</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas ipsum magni minima
+                 suscipit, perspiciatis ipsa voluptates, necessitatibus incidunt sequi quasi 
+                 debitis, asperiores odit similique! Corrupti, natus? Ut esse sunt nesciunt. 
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quo voluptate 
+                 praesentium necessitatibus autem iure voluptatibus ad aperiam vero. Quasi libero 
+                 qui ducimus beatae culpa nesciunt adipisci. 
+                Totam, quae reiciendis.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa incidunt aliquam eligendi earum autem doloribus, laboriosam similique officiis, a reprehenderit nostrum consectetur molestias veritatis dolore adipisci aspernatur,
+                 perspiciatis quibusdam suscipit! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos deleniti delectus debitis vero alias, pariatur, cupiditate ad maxime libero, a iure ratione reprehenderit eveniet adipisci incidunt veritatis est eaque assumenda.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A at, ea nam unde voluptas enim ex eos, provident animi voluptates totam nostrum assumenda voluptatibus rem? Consequatur voluptas quibusdam tempora error.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem, in soluta tenetur voluptates sint ullam, sed odio molestias debitis eum qui. Sequi explicabo dolore eum ullam commodi sit molestias quasi.
+                
+            </p>
+
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".menu-icon").on("click", function () {
+                $("nav ul").toggleClass("showing");
+            });
+        });
+
+        $(window).on("scroll", function() {
+            if($(window).scrollTop()) {
+                $('nav').addClass('black');
+            }
+            else {
+                $('nav').removeClass('black');
+            }
+        });
+
+
+    </script>
     
 </body>
 </html>
