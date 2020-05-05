@@ -16,7 +16,10 @@ body {
     height: 100%;
     overflow-y: scroll;
     overflow-x: hidden;
+    max-width: 2000px;
+    min-width: 1000px;
 }
+
 
 .logo {
     
@@ -34,6 +37,7 @@ body {
 
 .header {
     height: 135px;
+    
 }
 
 .nav-links {
@@ -41,6 +45,7 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 2% 2%;
+    
 }
 
 .nav-links li {
@@ -117,7 +122,13 @@ body {
 }
 
 .section-2 {
-    height: 300px;
+   color: #333;
+   height: 800px;
+   font-size: 30px;
+}
+
+.section-2 ul  {
+    overflow: visible;
 }
 
 
