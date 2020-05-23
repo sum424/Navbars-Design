@@ -20,11 +20,20 @@ header {
 
 
 .content {
-    width: 90%;
+    /*
+    width: max(400px);
+    width: max(20px, 90%);
+*/
+    /*Clamp always uses three values min, width and max*/
+    font-size: clamp(3rem/*min*/, 5vw /*locks in*/, 5rem/*max*/);
+    /*Calc helps to increase or decrease the value with the font size*/
+    font-size: calc(1vw + 0.5rem);
+    width: clamp(400px, 90%, 200rem);
     margin: 4em auto;
     font-size: 20px;
     line-height: 30px;
     text-align: justify;
+    
 }
 
 .logo {
